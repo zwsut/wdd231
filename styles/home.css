@@ -1,11 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-Regular.ttf') format('embedded-opentype'),
         url('../fonts/Raleway-Regular.ttf') format('woff2'),
         url('../fonts/Raleway-Regular.ttf') format('woff'),
         url('../fonts/Raleway-Regular.ttf') format('truetype'),
         url('../fonts/Raleway-Regular.ttf') format('svg');
-}
+} */
 
 body, h1, h2, p, ul {
     margin: 0;
