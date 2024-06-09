@@ -1,0 +1,272 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3vw;
+}
+
+nav {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #ff8800;
+    border-radius: 10px;
+}
+
+main {
+    padding: 1rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+section {
+    background: #d8d8d8;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+section h2 {
+    padding: 0.5rem;
+    background-color: #200707;
+    color: #e6e6e6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.courseWork ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.location p {
+    font-size: .8rem;
+    margin: 0 auto;
+}
+
+.location {
+    text-align: center;
+}
+
+.location h2 {
+    margin-bottom: 20px;
+}
+
+.location img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.certificate p {
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #200707;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #724343;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid #000000;
+}
+
+.course-card {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-card.incomplete {
+    background-color: #ffcaca;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.colored {
+    color: #ffe1be;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    nav.active ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    main {
+        display: block;
+    }
+
+    section {
+        margin-bottom: 1.5rem;
+    }
+
+    .certificate {
+        margin-bottom: 130px;
+    }
+}
+
+@media (min-width: 769px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+    }
+
+    .courseWork {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .location,
+    .certificate {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .certificate {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 2;
+        margin-bottom: 100px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 1rem;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    .classCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .course-card {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .course-card.incomplete {
+        background-color: #ffcaca;
+    }
+}

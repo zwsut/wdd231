@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Zachariah Sutherland</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I -- Zachariah Sutherland -- Learning about HTML, CSS, Javascript for web development.">
+    <meta name="author" content="Zachariah Sutherland">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/selfie_circle.webp" alt="Profile Picture of Zach">
+        <h1>Zachariah Sutherland</h1>
+    </header>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/zach-sutherland/">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="courseWork">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="location">
+            <h2>Connecticut, USA</h2>
+            <img src="images/connecticut.webp" alt="Connecticut Image">
+            <p>The Sloan-Raymond-Fitch house in Wilton, Connecticut<br>Photo by Carol M. Highsmith</p>
+        </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="button-container">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <p>Required Credits: <span id="creditsRequired"></span></p>
+            <hr>
+            <div class="classCards">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Zachariah Sutherland - Connecticut, USA</p>
+        <p id="lastModified" class="colored"></p>
+    </footer>
+</body>
+</html>
