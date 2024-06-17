@@ -1,0 +1,65 @@
+[
+    {
+        "name": "4 Elements Direct Primary Care & Wellness Space",
+        "address": "1199 Sullivan Ave, South Windsor CT 06074, US",
+        "phone": "(860) 469-5646",
+        "website": "https://www.4elementsdpc.com",
+        "image": "../images/4elements.webp",
+        "membershipLevel": 3,
+        "otherInfo": "4E DPC is an enhanced innovative primary care practice joining the national movement of reclaiming the fundamental relationship of primary care: the doctor-patient relationship."
+    },
+    {
+        "name": "Aldi, Inc.",
+        "address": "295 Rye Street, South Windsor CT 06074, US",
+        "phone": "(860) 290-2900",
+        "website": "https://www.aldi.us/",
+        "image": "../images/aldi.webp",
+        "membershipLevel": 2,
+        "otherInfo": "We’re in the business of offering high-quality groceries at everyday low prices."
+    },
+    {
+        "name": "American Eagle Financial Credit Union",
+        "address": "530 Buckland Road, South Windsor CT 06074, US",
+        "phone": "860-568-2020 4865",
+        "website": "https://www.americaneagle.org/",
+        "image": "../images/americaneagle.webp",
+        "membershipLevel": 1,
+        "otherInfo": "Established in 1935, American Eagle Financial Credit Union is a full-service CT credit union offering savings accounts, checking accounts, credit cards, auto loans, mortgages, business accounts and much more."
+    },
+    {
+        "name": "AMK Welding",
+        "address": "283 Sullivan Ave, South Windsor CT 06074, US",
+        "phone": "(860) 289-5634",
+        "website": "https://meyertool.com/amk-welding/index.html",
+        "image": "../images/amk.webp",
+        "membershipLevel": 2,
+        "otherInfo": "AMK has a well-earned reputation for welding complex assemblies. Our plant encompasses 40,000 square feet in South Windsor, CT."
+    },
+    {
+        "name": "Andrews Oil & Gas Services Inc.",
+        "address": "136 Rye Street, South Windsor CT 06074, US",
+        "phone": "(860) 528-0766",
+        "website": "https://www.andrewsoilandgas.com/",
+        "image": "../images/andrews.webp",
+        "membershipLevel": 1,
+        "otherInfo": "In operation since 1957, Andrews Oil & Gas Services, Inc. takes pride in our heating, cooling & conversions gas installations and repairs."
+    },
+    {
+        "name": "Aqua Pool & Patio",
+        "address": "53 Newberry Road, East Windsor CT 06088, US",
+        "phone": "(860) 623-9886",
+        "website": "https://www.aquapool.com/",
+        "image": "../images/aqua.webp",
+        "membershipLevel": 3,
+        "otherInfo": "When you opt to have your pool installed or renovated by Aqua Pool & Patio, you can be assured of receiving unmatched expertise paired with exceptional customer service."
+    },
+    {
+        "name": "Asset Management Associates",
+        "address": "PO Box 742, South Windsor CT 06074, US",
+        "phone": "(860) 648-1953",
+        "website": "https://www.assetmanagementassoc.com/",
+        "image": "../images/asset.webp",
+        "membershipLevel": 2,
+        "otherInfo": "Asset Management Associates is owned and operated by John R. Ruocco. It has been registered as a “Registered Investment Advisor” (RIA) with the State of Connecticut Department of Banking since January of 1990."
+    }
+]
