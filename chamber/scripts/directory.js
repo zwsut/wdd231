@@ -16,13 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const memberContainer = document.getElementById('member-container');
 
     async function fetchMembers() {
-        try {
-            const response = await fetch('data/members.json');
-            const members = await response.json();
-            return members;
-        } catch (error) {
-            console.error('Error fetching members:', error);
-        }
+        const response = await fetch('data/members.json');
+        const members = await response.json();
+        return members;        
     }
 
     function generateMemberCards(members) {
