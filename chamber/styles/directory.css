@@ -88,6 +88,10 @@ footer {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 #member-container {
     margin: auto auto;
     width: 70%;

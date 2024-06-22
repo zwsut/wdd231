@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function generateMemberCards(members) {
         memberContainer.innerHTML = '';
-        members.forEach(member => {
+        try {members.forEach(member => {
             const card = document.createElement('div');
             card.classList.add('member-card');
             card.innerHTML = `
@@ -36,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>${member.otherInfo}</p>
             `;
             memberContainer.appendChild(card);
-        });
+        })} catch(error) {
+            console.log(error)
+        };
     }
 
     fetchMembers().then(members => {
