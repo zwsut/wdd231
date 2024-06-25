@@ -1,5 +1,5 @@
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=5591f86b273e003d408eec2dda77795e';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=';
 
 apiFetch(url);
 
