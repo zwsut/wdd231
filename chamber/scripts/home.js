@@ -59,7 +59,7 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
+    let desc = toTitleCase(data.weather[0].description);
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     weatherDesc.textContent = `${desc}`;
@@ -73,3 +73,10 @@ function displayResults2(data) {
     tomorrowTemp.textContent = `${data.list[4].main.temp_max}`;
     twoDayTemp.textContent = `${data.list[12].main.temp_max}`;
 }
+
+function toTitleCase(str) {
+    return str.replace(
+      /\w\S*/g,
+      text => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase()
+    );
+  }
