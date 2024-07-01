@@ -236,16 +236,16 @@ h1 {
     padding: 20px;
 }
 
-a {
+main a {
     color: black;
     text-decoration: none;
 }
 
-a:visited {
+main a:visited {
     color: #222;
 }
 
-a:hover {
+main a:hover {
     text-decoration: underline;
 }
 
