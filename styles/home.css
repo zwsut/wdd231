@@ -157,6 +157,7 @@ hr {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 2s ease;
 }
 
 .course-card.incomplete {
@@ -175,6 +176,36 @@ footer {
 
 .colored {
     color: #ffe1be;
+}
+
+dialog {
+    border: 1 pcx solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffcaca;
+    box-shadow: 0 0 20px #200707;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+strong {
+    font-weight: bold;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 2px solid black;
+}
+
+.certificate .course-card:hover {
+    background-color: #ffe1be;
 }
 
 @media (max-width: 768px) {

@@ -97,12 +97,17 @@ function displayFilteredCourses(subject) {
         const card = document.createElement('div');
         card.classList.add('course-card');
         card.textContent = `${course.subject} ${course.number}`;
+        card.classList.add(`${course.subject}${course.number}`)
 
         if (!course.completed) {
             card.classList.add('incomplete');
         }
 
         classCardsContainer.appendChild(card);
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        })
     });
 }
 
@@ -120,3 +125,22 @@ document.querySelector('.button-container button:nth-child(3)').addEventListener
 
 displayFilteredCourses('All');
 
+const courseDetails = document.getElementById('course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id='closeModal'>𝕏</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p> 
+    `
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    })
+}
