@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     background-color: #889;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -70,7 +71,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
@@ -106,6 +106,9 @@ h1 {
     display: block;
     width: 100%;
     height: auto;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #call-to-action {
@@ -128,7 +131,8 @@ h1 {
 
 h1 {
     background-color: #ddbd99;
-    width: 1600px;
+    width: 20%;
+    height: 3rem;
     margin: 0 auto;
     margin-top: 25px;
     border: .5px solid black;
@@ -137,12 +141,17 @@ h1 {
 
 #grid-container {
     width: 100%;
-    max-width: 1600px;
+    max-width: calc(100% - 40px);
     display: grid;
     position: relative;
     margin: 0 auto;
     grid-template-columns: 50% 25% 25%;
     grid-template-rows: 1fr 2fr;
+}
+
+#grid-container h1 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
 }
 
 #grid-container div {
@@ -153,11 +162,6 @@ h1 {
     border-radius: 4px;
 }
 
-#grid-container h1 {
-    grid-column: 1/4;
-    grid-row: 1/2;
-}
-
 #grid-container div h2 {
     width: 100%;
     background-color: #da8e38;
@@ -166,18 +170,95 @@ h1 {
 }
 
 #events {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 #weather {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 #forecast {
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#events {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+#events::-webkit-scrollbar {
+    display: none;
+}
+
+#events .event {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #d1d1d1;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+#events .event h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#events .event p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+#spotlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.spotlight {
+    max-width: 400px;
+    background-color: #ddbd99;
+    margin: 10px;
+    border: 0.5px solid black;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #eventsDiv, #weather, #forecast {
+        width: 600px;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    #spotlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -202,7 +283,53 @@ h1 {
     nav li {
         margin: 0.5rem 0;
     }
+
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin: 0 auto;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer div, .footer-icons {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+    }
+
+    #grid-container div {
+        width: 420px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #spotlights {
+        grid-template-columns: 1fr;
+    }
+
+    #grid-container h1 {
+        width: 300px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
+
 
 @media (min-width: 769px) {
     header {
