@@ -21,7 +21,8 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/home.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preload" href="styles/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -42,7 +43,10 @@
     </header>
     <main>
         <div id="hero-banner">
-            <img src="images/hero.webp" alt="Squantz Pond, New Milford, Connecticut, Photo credit: Carol M. Highsmith" loading="lazy">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 800px)" height="300" width="720">
+                <img src="images/hero.webp" alt="Squantz Pond, New Milford, Connecticut, Photo credit: Carol M. Highsmith" loading="lazy">
+            </picture>
             <a href="https://zwsut.github.io/wdd231/chamber/join.html" target="_blank" id="call-to-action">Click here to join today!</a>
         </div>
         <section id="grid-container">

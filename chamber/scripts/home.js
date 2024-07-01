@@ -2,7 +2,7 @@ const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?lat=41.6&lon
 const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=41.6&lon=-73.1&units=imperial&appid=5591f86b273e003d408eec2dda77795e';
 const dayIndex = [
     {1:'Monday'},
-    {2:'Teusday'},
+    {2:'Tuesday'},
     {3:'Wednesday'},
     {4:'Thursday'},
     {5:'Friday'},
