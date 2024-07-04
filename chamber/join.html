@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Chamber of Commerce Project - Zachariah Sutherland</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I -- Zachariah Sutherland -- This is the join page for the chamber of commerce project.">
+    <meta name="author" content="Zachariah Sutherland">
+
+    <link rel="icon" href="images/orangeicon.svg" type="image/x-icon">
+
+    <meta property="og:title" content="Join - Chamber of Commerce Project - Zachariah Sutherland">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://zwsut.github.io/wdd231/chamber/images/thumbnail.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://zwsut.github.io/wdd231/chamber/join.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Join page for Connecticut chamber of commerce web development project.">
+    <meta property="og:site_name" content="CT Chamber of Commerce Project Join">
+    <meta name="twitter:image:alt" content="Goodspeed Opera House in East Haddam, Connecticut">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Connecticut Commerce Project Logo">
+    
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul>
+                <li><a href="https://zwsut.github.io/wdd231/chamber">Home</a></li>
+                <li><a href="https://zwsut.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="#" class="active">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main ---------------------------------------------------------- -->
+    <main>
+        <h2>Membership Application Form</h2>
+
+        <div class="membership-cards">
+            <div class="membership-card" onclick="displayModal('Non-Profit Membership', 'Benefits tailored for non-profit organizations.', '$50 / year')">
+                NP Membership
+            </div>
+            <div class="membership-card" onclick="displayModal('Bronze Membership', 'Basic level benefits. Access to chamber of commerce events.', '$300 / year')">
+                Bronze Membership
+            </div>
+            <div class="membership-card" onclick="displayModal('Silver Membership', 'Enhanced benefits including all lower level benefits, event discounts and available training programs.', '$600 / year')">
+                Silver Membership
+            </div>
+            <div class="membership-card" onclick="displayModal('Gold Membership', 'Premium benefits including all lower level benefits, spotlight positions on the home page and other advertising opportunities.', '$1200 / year')">
+                Gold Membership
+            </div>
+        </div>
+
+        <dialog id="modalBox"></dialog>
+
+        <form method="get" action="thankyou.html">
+            <label for="first-name" title="Applicant's First Name">First Name:
+                <input type="text" id="first-name" name="first-name" title="Applicant's First Name" autocomplete="given-name" required>
+            </label>
+    
+            <label for="last-name" title="Applicant's Last Name">Last Name:
+                <input type="text" id="last-name" name="last-name" title="Applicant's Last Name" autocomplete="family-name" required>
+            </label>
+    
+            <label for="organization-title" title="Applicant's Organizational Title">Organizational Title:
+                <input type="text" id="organization-title" name="organization-title" title="Applicant's Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" required>
+            </label>
+    
+            <label for="email" title="Applicant's Email Address">Email Address:
+                <input type="email" id="email" name="email" title="Applicant's Email Address" autocomplete="email" placeholder="example@domain.com" required>
+            </label>
+    
+            <label for="mobile" title="Applicant's Mobile Phone Number">Mobile Phone Number:
+                <input type="tel" id="mobile" name="mobile" title="Applicant's Mobile Phone Number" autocomplete="tel" required>
+            </label>
+    
+            <label for="organization" title="Business/Organization's Name">Business/Organization's Name:
+                <input type="text" id="organization" name="organization" title="Business/Organization's Name" autocomplete="organization" required>
+            </label>
+    
+            <label for="membership-level" title="Membership Level">Membership Level:
+                <select id="membership-level" name="membership-level" title="Membership Level" required>
+                    <option value="Non-Profit">NP Membership (Non-Profit)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+            </label>
+    
+            <label for="description" title="Business/Organization's Description">Business/Organization's Description:
+                <textarea id="description" name="description" title="Business/Organization's Description"></textarea>
+            </label>
+    
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+    
+            <button type="submit">Send Your Application!</button>
+        </form>
+    </main>
+    <!--      ---------------------------------------------------------- -->
+    <footer>
+        <div id="left-footer">
+            <p>
+                Connecticut Chamber of Commerce<br>
+                100 Not a Real Rd.<br>
+                Hartford, CT 06101<br>
+                CTCOC@email.address<br>
+                (123) 456-7890
+            </p>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.indeed.com">
+                <img src="images/indeed.svg" alt="Indeed">
+            </a>
+        </div>
+
+        <div id="right-footer">
+            <p>
+                WDD231 Class Project<br>
+                Zachariah Sutherland<br>
+                &copy; <span id="currentyear"></span> CT Chamber of Commerce Project<br>
+                <span id="lastModified" class="colored"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
