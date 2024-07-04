@@ -42,7 +42,6 @@
             </ul>
         </nav>
     </header>
-    <!-- Main ---------------------------------------------------------- -->
     <main>
         <h2>Membership Application Form</h2>
 
@@ -90,13 +89,14 @@
     
             <label for="membership-level" title="Membership Level">Membership Level:
                 <select id="membership-level" name="membership-level" title="Membership Level" required>
+                    <option value="" disabled selected>Select your membership level</option>
                     <option value="Non-Profit">NP Membership (Non-Profit)</option>
                     <option value="Bronze">Bronze Membership</option>
                     <option value="Silver">Silver Membership</option>
                     <option value="Gold">Gold Membership</option>
                 </select>
-
             </label>
+            
     
             <label for="description" title="Business/Organization's Description">Business/Organization's Description:
                 <textarea id="description" name="description" title="Business/Organization's Description"></textarea>
@@ -107,7 +107,7 @@
             <button type="submit">Send Your Application!</button>
         </form>
     </main>
-    <!--      ---------------------------------------------------------- -->
+
     <footer>
         <div id="left-footer">
             <p>
