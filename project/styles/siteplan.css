@@ -1,0 +1,127 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+      background-color: #2a2e30;
+  }
+
+  h1 {
+    color: #FFFFFF;
+  }
+  
+  h1, h2, h3, p, ul {
+      margin: 0 0 1em 0;
+  }
+  
+  div {
+      border: 2px solid black;
+      margin: 5px;
+      border-radius: 5px;
+      max-width: 1200px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #9dd0e4;
+      color: #2a2e30;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  p, li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #purpose, #scenarios, #color, #fonts, #wireframes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  #color {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr;
+
+  }
+  
+  #color h2 {
+      grid-row: 1;
+      grid-column: 2;
+  }
+  
+  #color section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      grid-row: 2;
+  }
+  
+  #blue-box, #grey-box, #white-box {
+      width: 200px;
+      height: 100px;
+      border: 2px solid #000;
+  }
+  
+  #grey-box {
+      background-color: #2a2e30;
+  }
+  
+  #blue-box {
+      background-color: #9dd0e4;
+  }
+  
+  #white-box {
+      background-color: #ffffff;
+  }
+  
+  img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px;
+  }
+  
+  ul {
+      list-style: none;
+  }
+  
+
+  
+  footer {
+      background-color: #2a2e30;;
+      color: #FFFFFF;
+      width: 1200px;
+      margin-bottom: 10px;
+      border: 2px solid black;
+      border-radius: 5px;
+  }
+  
+  
+  
