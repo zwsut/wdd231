@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Chamber of Commerce Project - Zachariah Sutherland</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I -- Zachariah Sutherland -- This is the discover page for the chamber of commerce project.">
+    <meta name="author" content="Zachariah Sutherland">
+    <link rel="icon" href="images/orangeicon.svg" type="image/x-icon">
+    <meta property="og:title" content="Discover - Chamber of Commerce Project - Zachariah Sutherland">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://zwsut.github.io/wdd231/chamber/images/thumbnail.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://zwsut.github.io/wdd231/chamber/discover.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Discover page for Connecticut chamber of commerce web development project.">
+    <meta property="og:site_name" content="CT Chamber of Commerce Project Discover">
+    <meta name="twitter:image:alt" content="Goodspeed Opera House in East Haddam, Connecticut">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Connecticut Commerce Project Logo">
+    
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul>
+                <li><a href="https://zwsut.github.io/wdd231/chamber">Home</a></li>
+                <li><a href="https://zwsut.github.io/wdd231/directory">Directory</a></li>
+                <li><a href="https://zwsut.github.io/wdd231/chamber/join.html">Join</a></li>
+                <li><a href="#" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Discover Connecticut!</h1>
+    <main id="main-grid">
+        <section id="sidebar">
+            <div id="welcome-message"></div>
+            <div class="demographics-container">
+                <h2>Connecticut Demographics</h2>
+                <div class="demographics-item">
+                    <span>Total Population:</span> Approximately 3.6 million (2023 estimate)
+                </div>
+                <div class="demographics-item">
+                    <span>Population Density:</span> About 738 people per square mile
+                </div>
+                <div class="demographics-item">
+                    <span>Median Age:</span> 41.0 years
+                </div>
+                <div class="demographics-item">
+                    <span>Median Household Income:</span> $79,855
+                </div>
+                <div class="demographics-item">
+                    <span>Unemployment Rate:</span> 5.1%
+                </div>
+                <div class="demographics-item">
+                    <span>Homeownership Rate:</span> 67.5%
+                </div>
+            </div>
+            <div id="discover-events">
+                <h2>Events</h2>
+            </div>
+            <div id="calendar">
+                <div class="month">
+                    <h2>July 2023</h2>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+                </div>
+            </div>
+        </section>
+
+        <section id="photos">
+            <figure>
+                <picture>
+                  <source srcset="images/ancientcemetery.webp" type="image/webp">
+                  <img src="images/ancientcemetery.webp" alt="Ancient Cemetery, located in Hartford, Connecticut - Photo Credit: Carol M. Highsmith" loading="lazy">
+                </picture>
+                <figcaption>Ancient Cemetery, located in Hartford, Connecticut - Photo Credit: Carol M. Highsmith</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                    <source srcset="images/chapmanfalls.webp" type="image/webp">
+                    <img src="images/chapmanfalls.webp" alt="Chapman Falls in East Haddam, Connecticut - Photo Credit: Carol M. Highsmith">
+                </picture>
+                <figcaption>Chapman Falls in East Haddam, Connecticut - Photo Credit: Carol M. Highsmith</figcaption>
+            </figure>
+            
+
+            <figure>
+                <picture>
+                  <source srcset="images/glasshouse.webp" type="image/webp">
+                  <img src="images/glasshouse.webp" alt="Glass house in autumn in New Canaan, Connecticut - Photo Credit: Carol M. Highsmith">
+                </picture>
+                <figcaption>Glass house in autumn in New Canaan, Connecticut - Photo Credit: Carol M. Highsmith</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                  <source srcset="images/icearena.webp" type="image/webp">
+                  <img src="images/icearena.webp" alt="Ingall’s Ice Arena in New Haven, Connecticut - Photo Credit: Carol M. Highsmith">
+                </picture>
+                <figcaption>Ingall’s Ice Arena in New Haven, Connecticut - Photo Credit: Carol M. Highsmith</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                  <source srcset="images/capitol.webp" type="image/webp">
+                  <img src="images/capitol.webp" alt="Interior of the Capitol of Connecticut located in Hartford - Photo Credit: Carol M. Highsmith">
+                </picture>
+                <figcaption>Interior of the Capitol of Connecticut located in Hartford - Photo Credit: Carol M. Highsmith</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                  <source srcset="images/pumpkins.webp" type="image/webp">
+                  <img src="images/pumpkins.webp" alt="Pumpkin patch near Litchfield, Connecticut - Photo Credit: Carol M. Highsmith">
+                </picture>
+                <figcaption>Pumpkin patch near Litchfield, Connecticut - Photo Credit: Carol M. Highsmith</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <div id="left-footer">
+            <p>
+                Connecticut Chamber of Commerce<br>
+                100 Not a Real Rd.<br>
+                Hartford, CT 06101<br>
+                CTCOC@email.address<br>
+                (123) 456-7890
+            </p>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.indeed.com">
+                <img src="images/indeed.svg" alt="Indeed">
+            </a>
+        </div>
+
+        <div id="right-footer">
+            <p>
+            WDD231 Class Project<br>
+            Zachariah Sutherland<br>
+            &copy; <span id="currentyear"></span> CT Chamber of Commerce Project<br>
+            <span id="lastModified" class="colored"></span>
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
