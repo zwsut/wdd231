@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (changesPercentage > 0) {
                 stockDiv.style.backgroundColor = "rgb(164, 255, 160)";
             } else if (changesPercentage < 0) {
-                stockDiv.style.backgroundColor = "rgb(255, 149, 145)";
+                stockDiv.style.backgroundColor = "#f5b0b0";
             }
 
             stockDiv.innerHTML = `
