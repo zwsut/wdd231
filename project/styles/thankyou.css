@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#thankyou-message {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+#thankyou-message h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#thankyou-message img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#thankyou-message p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}

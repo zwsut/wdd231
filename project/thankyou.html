@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Final Project - Zachariah Sutherland</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development I -- Zachariah Sutherland -- This is the home page for my final project.">
+    <title>Thank You - Final Project - Zachariah Sutherland</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I -- Zachariah Sutherland -- This is the thank you for my final project.">
     <meta name="author" content="Zachariah Sutherland">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-    <meta property="og:title" content="Home - Final Project - Zachariah Sutherland">
+    <meta property="og:title" content="Thank You - Final Project - Zachariah Sutherland">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://zwsut.github.io/wdd231/project/images/thumbnail.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://zwsut.github.io/wdd231/project/index.html">
+    <meta property="og:url" content="https://zwsut.github.io/wdd231/project/thankyou.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:description" content="Home page for WDD231 web development project.">
-    <meta property="og:site_name" content="WDD231 Final Project Home">
+    <meta property="og:description" content="Thank you page for WDD231 web development project.">
+    <meta property="og:site_name" content="WDD231 Final Project Thank You">
     <meta name="twitter:image:alt" content="Stock Photo - Pun intended">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
 </head>
 <body>
     <header>
@@ -30,23 +30,18 @@
         <nav>
             <div class="hamburger" id="menu-button">&#9776;</div>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="https://zwsut.github.io/wdd231/project/index.html">Home</a></li>
                 <li><a href="https://zwsut.github.io/wdd231/project/stocks.html">Your Stocks</a></li>
-                <li><a href="https://zwsut.github.io/wdd231/project/signup.html">Sign Up!</a></li>
+                <li><a href="https://zwsut.github.io/wdd231/project/stocks.html" class="active">Sign Up!</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="home-content">
-            <div id="home-image">
-                <img src="images/home-image.webp" alt="Photo of Graph and Pencil" loading="lazy">
-                <a href="https://zwsut.github.io/wdd231/project/signup.html" class="cta-link">Sign up today!</a>
-            </div>
-            <div id="home-text">
-                <h2>Welcome!</h2>
-                <p>Share Watch is a website designed to help you keep track of the prices of your stocks. We provide end-of-day data for each entry you add to your customizable list of stocks to track.</p>
-            </div>
-            <div id="stocks-container" class="flex-container"></div>
+        <div id="thankyou-message">
+            <h2>Thank You for Registering, <span id="fname"></span> <span id="lname"></span>!</h2>
+            <img src="images/thankyou.webp" alt="Thank you for registering!" loading="lazy">
+            <p>We will send you updates on new site features and functionality at <span id="email"></span>!</p>
+            <a href="https://zwsut.github.io/wdd231/project/stocks.html">Start tracking stocks now!</a>
         </div>
     </main>
     <footer>
@@ -75,6 +70,6 @@
             <a href="https://financialmodelingprep.com/developer/docs/">Data provided by Financial Modeling Prep</a>
         </div>
     </footer>
-    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/thankyou.js"></script>
 </body>
 </html>

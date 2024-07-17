@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Final Project - Zachariah Sutherland</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development I -- Zachariah Sutherland -- This is the home page for my final project.">
+    <title>Sign Up - Final Project - Zachariah Sutherland</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I -- Zachariah Sutherland -- This is the sign page for my final project.">
     <meta name="author" content="Zachariah Sutherland">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -15,14 +15,14 @@
     <meta property="og:image" content="https://zwsut.github.io/wdd231/project/images/thumbnail.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://zwsut.github.io/wdd231/project/index.html">
+    <meta property="og:url" content="https://zwsut.github.io/wdd231/project/signup.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:description" content="Home page for WDD231 web development project.">
-    <meta property="og:site_name" content="WDD231 Final Project Home">
+    <meta property="og:description" content="Signup page for WDD231 web development project.">
+    <meta property="og:site_name" content="WDD231 Final Project Sign Up">
     <meta name="twitter:image:alt" content="Stock Photo - Pun intended">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/signup.css">
 </head>
 <body>
     <header>
@@ -30,23 +30,29 @@
         <nav>
             <div class="hamburger" id="menu-button">&#9776;</div>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="https://zwsut.github.io/wdd231/project/index.html">Home</a></li>
                 <li><a href="https://zwsut.github.io/wdd231/project/stocks.html">Your Stocks</a></li>
-                <li><a href="https://zwsut.github.io/wdd231/project/signup.html">Sign Up!</a></li>
+                <li><a href="#" class="active">Sign Up!</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="home-content">
-            <div id="home-image">
-                <img src="images/home-image.webp" alt="Photo of Graph and Pencil" loading="lazy">
-                <a href="https://zwsut.github.io/wdd231/project/signup.html" class="cta-link">Sign up today!</a>
+        <div id="registration-form">
+            <form id="user-registration" action="thankyou.html">
+                <h2>Registration Form</h2>
+                <div class="form-content">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required><br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+            <div class="button-container">
+                <button id="unregister-button">Unregister</button>
             </div>
-            <div id="home-text">
-                <h2>Welcome!</h2>
-                <p>Share Watch is a website designed to help you keep track of the prices of your stocks. We provide end-of-day data for each entry you add to your customizable list of stocks to track.</p>
-            </div>
-            <div id="stocks-container" class="flex-container"></div>
         </div>
     </main>
     <footer>
@@ -75,6 +81,6 @@
             <a href="https://financialmodelingprep.com/developer/docs/">Data provided by Financial Modeling Prep</a>
         </div>
     </footer>
-    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/signup.js"></script>
 </body>
 </html>

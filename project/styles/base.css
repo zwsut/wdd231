@@ -16,9 +16,9 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #9DD0E4;
-    max-width: 100%; /* Ensures content doesn't exceed screen width */
-    margin: 0 auto; /* Centers content horizontally */
-    overflow-x: hidden; /* Prevents horizontal scrollbars */
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -78,6 +78,10 @@ nav a:hover {
     border-radius: 10px;
 }
 
+nav ul li a.active {
+    color: aquamarine;
+}
+
 /* Main Content Styles */
 main {
     padding-top: 60px;
@@ -115,6 +119,11 @@ footer {
 .footer-icons img {
     width: 50px;
     height: 50px;
+}
+
+#right-footer a {
+    color: #ffe1be;
+    text-decoration: none;
 }
 
 /* Utility Classes */
